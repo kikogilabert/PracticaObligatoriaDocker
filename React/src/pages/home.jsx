@@ -1,6 +1,6 @@
 import React from 'react'
 // import ListCities from '../components/Client/Cities/ListCities'
-import HomeCSS from  './Home.module.css';
+import HomeCSS from  './home.module.css';
 import CardHomeCities from '../components/Home/card_home_cities';
 import { useContext } from "react";
 import CitiesContext from "../context/CitiesContext";
