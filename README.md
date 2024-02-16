@@ -27,7 +27,10 @@
 <h3>Running the Project</h3>
 <p>To run the project, make sure you have Docker and Docker Compose installed, then run the following command:</p>
     <p>docker-compose up -d</p>   
-
+<p>Once the project is on, you must enter PGAdmin trhow the port assigned in the docker. Use the PGAdmin credentials stored in the .env and log in</p>
+<p>Follow the steps:</p>
+<img src="![image](https://github.com/kikogilabert/PracticaObligatoriaDocker/assets/118535012/d5b0f3e3-85ce-4140-9431-74b3cd5ad17c)
+" />
 <h3>Stopping the project</h3>
 <p>To stop the project, press Ctrl+C in the terminal where you ran docker-compose up. To remove the containers, run:<p>
     <p>docker-compose down</p> 
