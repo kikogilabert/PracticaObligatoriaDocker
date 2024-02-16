@@ -12,7 +12,7 @@ services:
       - POSTGRES_PASSWORD=12345
       - POSTGRES_DB=rent_agency
 
-  backend:
+  backend: 
     build:
       context: ./Django
       dockerfile: Dockerfile.django
@@ -44,3 +44,16 @@ services:
     depends_on:
       - backend
     command: npm run dev
+  
+  loadbalancer:
+    container_name: loadbalancer_container
+    build:
+      context: ./loadbalancer
+      dockerfile: Dockerfile.loadbalancer
+    depends_on:
+      - backend
+      - frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./loadbalancer/nginx.conf:/etc/nginx/nginx.conf
