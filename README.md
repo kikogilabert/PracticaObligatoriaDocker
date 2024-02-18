@@ -24,7 +24,15 @@
 <p>The Nginx load balancer service is built from a Dockerfile located at ./loadbalancer/Dockerfile.loadbalancer. It depends on both the Django backend and React frontend services.</p>
 
 <h2>Usage</h2>
-<h3>Running the Project</h3>
+
+<h3>1. Installing React Frontend Dependencies</h3>
+<p>Navigate to the React frontend folder and install Node.js dependencies using npm:</p>
+    <p>npm install</p>   
+    
+<h3>2. Running the Project</h3>
+<p>Once all dependencies are installed, go back to the project's root folder:</p>
+    <p>cd ..</p>
+    
 <p>To run the project, make sure you have Docker and Docker Compose installed, then run the following command:</p>
     <p>docker-compose up -d</p>   
 <p>Once the project is on, you must enter PGAdmin trhow the port assigned in the docker. Use the PGAdmin credentials stored in the .env and log in</p>
