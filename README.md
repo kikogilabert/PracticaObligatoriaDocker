@@ -5,7 +5,7 @@
 
 <h3>PostgreSQL</h3>
 
-<p>El servei de PostgreSQL utilitza la ultima imatge de PostgreSQL i inicialitza la base de dades amb un script ubicat a ./postgresql/init.sql, ademes de fer una còpia de seguretat amb un archiu .dump</p>
+<p>El servei de PostgreSQL utilitza la darrera imatge de PostgreSQL i inicialitza la base de dades amb un script ubicat a ./postgresql/init.sql, a més de fer una còpia de seguretat amb un arxiu .dump.</p>
 <p>La base de dades està en execució al port 5432.</p>
 
 <h3>Backend de Django</h3>
@@ -30,7 +30,7 @@
 <br/>
 <h2>Ús</h2>
 <p>Clona el repositori al teu equip local amb: "git clone https://github.com/kikogilabert/PracticaObligatoriaDocker"</p>
-<p>Tindras que cambiar de rama a la "main_docker_compose"</p>
+<p>Hauràs de canviar de branca a la "main_docker_compose"</p>
 <br/>
 
 <h3>1. Instal·lació de les dependències del frontend de React</h3>
@@ -62,7 +62,7 @@
     <li>Contrasenya del contenidor de Postgres: "12345"</li>
 </ul>
 <img src="https://github.com/kikogilabert/PracticaObligatoriaDocker/assets/118535012/486db80d-42f8-4ad1-b259-142987699fcc"/>
-<p>Abans de desar-ho, haurem d'afegir un nom pel servidor (el que vullgues).</p>
+<p>Abans de desar-ho, haurem d'afegir un nom pel servidor (el que vulgues).</p>
 
 <hr>
 <h3>Aturar el projecte</h3>
