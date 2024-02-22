@@ -7,6 +7,7 @@
 <h3>PostgreSQL</h3>
 
 <p>The PostgreSQL service uses the latest PostgreSQL image and initializes the database with a script located at ./postgresql/init.sql.</p>
+<p>The database is running in the port 5432 </p>
 
 <h3>Django Backend</h3>
 
@@ -47,6 +48,10 @@
 <ul>
     <li>PgAdmin username: "admin@example.com" </li>
     <li>PgAdmin password: "admin" </li>
+    <li>Postgres Container host name: "postgres_container"</li>
+    <li>Postgres Container username: "postgres"</li>
+    <li>Postgres Container password: "12345"</li>
+    
 </ul>
 <img src="https://github.com/kikogilabert/PracticaObligatoriaDocker/assets/118535012/486db80d-42f8-4ad1-b259-142987699fcc" />
 <p>Before saving we will have to add a name for the Server (the one you want)</p>
