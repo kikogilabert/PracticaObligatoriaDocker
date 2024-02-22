@@ -11,6 +11,8 @@ services:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=${POSTGRES_DB}
+    networks:
+      - practica_net
 
   backend: 
     build:
@@ -21,6 +23,8 @@ services:
       - 8888:8888
     depends_on:
       - postgres
+    networks:
+      - practica_net
 
   pgadmin:
     image: dpage/pgadmin4:latest
@@ -33,6 +37,8 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
     ports:
       - 5050:80
+    networks:
+      - practica_net
 
   frontend:
     build:
@@ -44,6 +50,8 @@ services:
     depends_on:
       - backend
     command: npm run dev
+    networks:
+      - practica_net
   
   loadbalancer:
     container_name: loadbalancer_container
@@ -57,3 +65,8 @@ services:
       - "80:80"
     volumes:
       - ./loadbalancer/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - practica_net
+
+networks:
+  practica_net:
