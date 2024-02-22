@@ -30,7 +30,7 @@
 <br/>
 <h2>Ús</h2>
 <p>Clona el repositori al teu equip local amb: "git clone https://github.com/kikogilabert/PracticaObligatoriaDocker"</p>
-<p>Hauràs de canviar de branca a la "main_docker_compose"</p>
+<p>Hauràs de canviar de rama a la "main_docker_compose"</p>
 <br/>
 
 <h3>1. Instal·lació de les dependències del frontend de React</h3>
