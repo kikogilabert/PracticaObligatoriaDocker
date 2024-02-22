@@ -5,7 +5,7 @@ services:
     image: postgres:latest
     container_name: postgres_container
     volumes:
-      - ./postgresql/init.dump:/docker-entrypoint-initdb.d/init.sql
+      - ./Postgresql/init.dump:/docker-entrypoint-initdb.d/init.sql
     restart: always
     environment:
       - POSTGRES_USER=${POSTGRES_USER}
@@ -23,6 +23,7 @@ services:
       - 8888:8888
     depends_on:
       - postgres
+    restart: unless-stopped
     networks:
       - practica_net
 
